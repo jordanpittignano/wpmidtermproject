@@ -1,0 +1,8 @@
+html,body {margin: 0px;}
+#header {max-width: 100%; font-size: 80px; margin: 0; height: 200px; background-color: #c9c2c2;}
+#header img {width:80px; margin-left: 80px; margin-right: 325px;}
+#topnav ul {text-align: center; margin: 0 auto;}
+#topnav li {list-style-type: none; display: inline; margin-right: 15px; font-size: 25px;}
+#footer {margin-top: 80px; height: 100px;}
+#botnav ul {text-align: center; margin: 0 auto;}
+#botnav li {list-style-type: none; display: inline; margin-right: 15px; font-size: 20px;}
