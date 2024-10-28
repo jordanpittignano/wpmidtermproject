@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="f&b.css">
+        <style>
+            .grid{
+                text-align:center;
+                margin: 0 auto;
+            }
+            * {
+                padding: 0;
+                margin: 0;
+                outline: 0;
+            }
+            .box {
+                width: 850px;
+                list-style: none;
+                overflow: hidden;
+                padding-top: 20px;
+                text-align: center;
+                display: inline-block;
+                margin: 0 auto;
+            }
+            .box li {
+                width: 250px;
+                height: 250px;
+                margin: 0 0 20px 20px;
+                border: 1px solid #333333;
+                text-align: center;
+                display: inline-block;
+                position: relative;
+                overflow: hidden;
+            }
+            .box li .description {
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: -50px;
+                background: #000000;
+                color: #ffffff;
+                height: 50px;
+                font-size: 25px;
+                line-height: 20px;
+                text-align: center;
+                opacity: 0.7;
+                display: inline-block;
+            }
+            .box li:hover .description {
+                bottom: 0;
+            }
+            h1{
+                text-align: center;
+                font-size: 120px;
+            }
+        
+        </style>
+        <meta charset="utf-8">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+            <style type="text/css">
+            #slides-wrapper{height:320px;}
+            </style>
+            <script language="javascript">
+            pets = ["bed.jpg", "bath.jpg","brush.jpg","pamper.jpg","tennis.jpg","toothbrush.jpg","towel.jpg","tub.jpg","water.jpg"];
+            var petIndex=0;
+        
+            $(document).ready(function() {
+                $("#reviews").click(slideShow);
+            
+            })
+            function slideShow()
+            {
+                $("#slide img").fadeOut(2000,nextSlide);
+            }
+            function nextSlide()
+            {
+                petIndex++;
+                petIndex= petIndex== pets.length? 0: petIndex;
+                $("#slide img").attr("src", pets[petIndex]);
+                $("#slide img").fadeIn(2000,slideShow);
+            }
+        </script>
+        
+    </head>
+    <body>
+        <div id="header">
+            <a href="#">
+                <img src="logo.png" align="left">
+            </a>
+            Fluff & Buff
+            <div id="topnav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services & Pricing</a></li>
+                    <li><a href="#">Book an Apt</a></li>
+                    <li><a href="#">Gallery</a></li>
+                    <li><a href="#" id="reviews">Reviews</a></li>
+                    <li><a href="#">Tips & Blogs</a></li>
+                    <li><a href="#">Staff</a></li>
+                </ul>
+            </div>
+        </div>
+        <h1>Happy Pup Photos</h1>
+        <div id='slides-wrapper'>
+            <div id='slide'>
+                <img src="bed.jpg" />
+            </div>
+        </div>
+        <!-- <input type= "button" id="startSlides" value="Start Slide Show"> -->
+
+        <div class="grid">
+        <ul class="box">
+            <li>
+                <img src="toothbrush.jpg" alt="" />
+                <p class="description">Gary getting some extra scrubbage in our tubs</p>
+            </li>
+            <li>
+                <img src="bath.jpg" alt="" />
+                <p class="description">Bella modeling for our new shampoo products</p>
+            </li>
+            <li>
+                <img src="bed.jpg" alt="" />
+                <p class="description">Sadie getting comfy after a full treatment</p>
+            </li>
+            <li>
+                <img src="brush.jpg" alt="" />
+                <p class="description">Removing all of the knots from Max's hair</p>
+            </li>
+            <li>
+                <img src="pamper.jpg" alt="" />
+                <p class="description">Lola blow drying her hair after a bath</p>
+            </li>
+            <li>
+                <img src="tennis.jpg" alt="" />
+                <p class="description">Annie playing outside after being pampered</p>
+            </li>
+            <li>
+                <img src="towel.jpg" alt="" />
+                <p class="description">Lassie drying off before getting a trim</p>
+            </li>
+            <li>
+                <img src="tub.jpg" alt="" />
+                <p class="description">Baxter ready to get out of the tub after a dip</p>
+            </li>
+            <li>
+                <img src="water.jpg" alt="" />
+                <p class="description">Bruiser enjoying a nice rinse in the sun</p>
+            </li>
+        </ul>
+        </div>
+
+
+        <div id="footer">
+            <div id="botnav">
+                <ul>
+                    <li><a href="services.html">Services & Pricing</a></li>
+                    <li><a href="apt.html">Book an Apt</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>    
+    </body>
+</html>
