@@ -82,6 +82,39 @@ h1 {
     padding-bottom: 20px;
 }
 
+#smallnav {
+    width: 100%;
+    display: none;
+    justify-content: center;
+    margin-top: 10px;
+    display:none;
+}
+
+#smallnav ul{
+    list-style-type: none; 
+    font-size: 15px; 
+    margin-top: -12px;
+    margin-bottom: 33px;
+    padding: 5px; 
+    font-weight: 400;
+    display: flex;
+    gap: 20px;
+}
+
+
+#smallnav ul a:hover {
+    color: #684FAA;
+    text-decoration: underline;
+}
+
+#smallnav li a {
+    padding: 0px;
+    padding-left: 2px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
 #botnav ul {
     text-align: center; 
     margin: 0 auto;
