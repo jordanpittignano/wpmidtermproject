@@ -6,13 +6,38 @@
         <style type="text/css">
 
             li {display: inline-block;}
-            h1 {text-align: center}
-            h2 {text-align: center}
-            p {text-align: center; margin-right: 18%; margin-left: 18%}
-            .form-element {margin-bottom: 8px; font-size: 22px;}
-            .form {margin: 0 auto; text-align:center}
-            footer {padding: 10px 16px;}
+            h2{text-align: center;font-size: 25px;color:#1F0B55; font-weight:100; margin-bottom: 50px}
+            p {text-align: center; margin-right: 20%; margin-left: 20%; font-size:18px; color: #1F0B55}
+            .form-element {margin-bottom: 8px; font-size: 18px; color:#1F0B55;}
+            .form {margin: 0 auto; text-align:center; margin-top: 50px}
+            #contactBox {border: 2px solid; border-color: #1F0B55; margin-top: 50px; margin-left:20%; margin-right:20%}
+            .errorMessage {background-color: #fffdc3;} 
+            #descriptionBox {text-align:center; color:#1F0B55; margin-left:25%; margin-right:25%; line-height: 1.5;}
+            .name {font-weight:600; font-size: 22px; margin-top: 30px}
+            .job {font-size: 20px; font-weight:600; margin-top: 10px; margin-bottom: 5px}
+            .description {font-size: 18px}
         </style>
+
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js" 
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" 
+        crossorigin="anonymous"></script>
+
+        <script language="javascript">
+            function validateForm() {
+                valid = true
+                reqFields=["name", "email", "phone", "subject", "message"]
+                for (i=0; i<reqFields.length; i++) {
+                    field = document.getElementById(reqFields[i]);
+                    if (field.value == "") {
+                        id = "#" + reqFields[i]
+                        $(id).addClass("errorMessage");
+                        valid = false;
+                    }
+                }
+                
+                return valid  
+                }
+        </script>
 
     </head>
     <body>
@@ -37,62 +62,89 @@
         </div>
 
         <h1>Meet Our Staff!</h1>
-        <p>At Fluff & Buff, we are proud to work with the best dog groomers and 
-            trainers in Boston! Our dedicated team of professional groomers is 
-            passionate about making every dog look and feel their best. With 
-            years of experience, each staff member brings a unique set of skills 
+        <p style="line-height: 1.5;">At Fluff & Buff, we are proud to work with the best dog groomers and 
+            trainers in Boston! With years of experience, each staff member brings a unique set of skills 
             and a deep love for animals to ensure your pup gets top-notch care.
-             Whether it's a simple trim, a luxurious bath, or a full makeover, 
-             our groomers treat every dog as if they were their own.
         </p>
 
-        <img src="" align="center">
-        <div style="text-align:center">
-            <i> will add in images later</i> <br>
-            Groomer 1 <br>
-            Fill in with one or two sentences about our groomer
-        </div>
-        <img src="" align="center">
-        <div style="text-align:center">
-            Groomer 2 <br>
-            Fill in with one or two sentences about our groomer
-        </div>
-        <img src="" align="center">
-        <div style="text-align:center">
-            Manager <br>
-            Fill in with one or two sentences about our groomer
+        <div id="descriptionBox">
+            <div>
+                <img src="" align="center">
+                <div class="name">Andrew L.</div>
+                <div class="job">Groomer</div>
+                <div class="description">With over 8 years of grooming experience, Andrew brings expert 
+                    skill and a gentle touch to every dog he works with at Fluff & Buff. He specializes in 
+                    calming anxious pets and creating custom styles to suit each pup’s personality. Fun fact: 
+                    Andrew once trained as a pet photographer, so he knows just how to make every dog look camera-ready!</div>
+            </div>
+
+            <div>
+                <img src="" align="center">
+                <div class="name">Nicola D.</div>
+                <div class="job">Groomer</div>
+                <div class="description">Nicola has a decade of experience in grooming and is known for her 
+                    attention to detail and love of creative cuts. She has a special knack for working with 
+                    puppies and making their first grooming experiences positive and fun. When she's not grooming, 
+                    Nicola enjoys volunteering at local animal shelters and spending time with her two rescue dogs.</div>
+            </div>
+
+            <div>
+                <img src="" align="center">
+                <div class="name">John C.</div>
+                <div class="job">Groomer</div>
+                <div class="description">John brings 5 years of grooming experience to Fluff & Buff, where his attention
+                     to detail ensures that every dog leaves looking their absolute best. Known for his friendly demeanor,
+                      he excels at building trust with even the most nervous pups, making the grooming experience enjoyable 
+                      for them. Fun fact: John is also an avid dog agility enthusiast and enjoys competing with his own dog 
+                      on the weekends!</div>
+            </div>
+
+            <div>
+                <img src="" align="center">
+                <div class="name">Jordan P.</div>
+                <div class="job">Manager</div>
+                <div class="description">Jordan, the manager at Fluff & Buff, has over 6 years of experience in pet care 
+                    management, ensuring smooth operations and a welcoming atmosphere for both pets and their owners. With a 
+                    passion for customer service, Jordan is dedicated to providing the best experience for clients, always ready 
+                    to address any questions or concerns. Fun fact: When not managing the shop, Jordan enjoys hiking with her 
+                    puppy, exploring new trails and dog-friendly parks!</div>
+            </div>
         </div>
         <br>
         <br>
-        <h2>Contact Us</h2>
-        <p>Got questions about your pup? Fill out the form below, and our team 
-            at Fluff & Buff will get back to you as soon as possible. We’re here 
-            to help your furry friend look and feel their best!</p>
+        <div id="contactBox">
+            <h2>Contact Us</h2>
+            <p>Got questions about your pup? Fill out the form below, and our team 
+                at Fluff & Buff will get back to you as soon as possible. We’re here 
+                to help your furry friend look and feel their best!</p>
 
             <div class="form">
-                <form style="margin-top:50px" method="get" action="#">
-                    <div class="form-element"><label>Name: </label>
-                    <input type="text" name="your_name" size="50"/></div>
-                    <div class="form-element"><label>Email: </label>
-                    <input type="text" name="email" size="50"/></div>
-                    <div class="form-element"><label>Phone: </label>
-                    <input type="text" name="phone" size="50"/></div>
-                    <div class="form-element"><label>Subject: </label>
-                    <input type="text" name="subject" size="50"/></div>
+                <form method="get" action="#" onsubmit="return validateForm()">
+                    <div class="form-element"><label>Name* </label>
+                    <input type="text" id="name" name="name" /></div>
+                    <div class="form-element"><label>Email* </label>
+                    <input type="text" id="email" name="email"/></div>
+                    <div class="form-element"><label>Phone* </label>
+                    <input type="text" id="phone" name="phone"/></div>
+                    <div class="form-element"><label>Subject* </label>
+                    <input type="text" id="subject" name="subject"/></div>
                     <br>
-                    <div class="form-element"><label>Message: </label>
-                    <textarea type="text" name="message" size="50"></textarea></div>
+                    <div class="form-element"><label>Message* </label>
+                    <textarea type="text" id="message" name="message"></textarea></div>
                     <br>
-                    <input type="submit" value="Submit!">
-                    <br>
+                    <input type="submit" value="Submit!" style="margin-bottom:30px">
                 </form>
+            </div>
+        </div>
 
-        <footer>
-            <ul>
-                <li><a href=''>Services & Pricing</a></li>
-                <li><a href=''>Book an Apt</a></li>
-                <li><a href=''>Contact Us</a></li>
-            </ul>
-        </footer>
+        <div id="footer">
+            <div id="botnav">
+                <ul>
+                    <li><a href="services.html">Services & Pricing</a></li>
+                    <li><a href="apt.html">Book an Appointment</a></li>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
     </body>
 </html>
