@@ -17,30 +17,31 @@
         #submit {margin-left: 70px; margin-top: 20px}
         .errorMessage {color: #ff0000; background-color: #fffdc3;} 
         label {margin-right: 10px;}
+        #smallnav {display: none;}
+
+        #smallnav {
+            width: 100%;
+            display: none;
+            justify-content: center;
+            margin-top: 10px;
+        }
 
         @media(max-width: 922px) {
             #nav li a {font-size: 18px; padding: 5px}
         }
 
         @media(max-width: 787px) {
-            #nav li a {font-size: 15px; padding: 2px}
+            #nav li a {font-size: 17px; padding: 2px}
             #header {padding-bottom: 0px}
         }
 
-        @media(max-width: 650px) {
-            #nav li a {font-size: 15px; padding: 0px; padding-left: 2px;}
-        }
-
-        @media(max-width: 633px) {
-            #nav li a {font-size: 14px;}
-        }
-
-        @media(max-width: 600px) {
-            #nav li a {font-size: 13px; }
+        @media(max-width:715px) {
+            #nav {display: none;}
+            #smallnav {display: flex;}
         }
 
         @media(max-width: 568px) {
-            #nav li a {font-size: 12px; }
+            #smallnav li a {font-size: 20px; }
         }
 
         @media(max-width: 556px) {
@@ -48,7 +49,7 @@
         }
 
         @media(max-width: 535px) {
-            #nav li a {font-size: 11px; }
+            #smallnav li a {font-size: 18px; }
         }
 
         @media(max-width: 521px) {
@@ -111,7 +112,7 @@
         <div id="nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li id="navserv"><a href="services.html">Services & Pricing</a></li>
+                <li><a href="services.html">Services & Pricing</a></li>
                 <li><a href="apt.html">Book an Appointment</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="reviews.html">Reviews</a></li>
@@ -119,6 +120,17 @@
                 <li><a href="contactUs.html">Staff</a></li>
             </ul>
         </div>
+        <div id="smallnav">
+            <ul>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="apt.html">Appointments</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="blog.html">Blogs</a></li>
+                <li><a href="contactUs.html">Staff</a></li>
+            </ul>
+        </div>
+
     </div>
     <form method="get" action="#" onsubmit="return validateForm()">
         <div id="form">
