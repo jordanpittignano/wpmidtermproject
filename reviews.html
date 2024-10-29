@@ -9,6 +9,10 @@
         li#review{font-size: 18px;margin:25px;}
         h1{text-align: center;font-size: 80px;}
         h2{text-align: center;font-size: 60px;}
+        form {display:table; margin: 0 auto;}
+        p{display:table-row;}
+        label{display:table-cell;}
+        input{display: table-cell;}
     </style>
 
 </head>
@@ -43,11 +47,19 @@
         </ul>
         <h2>Give us your thoughts!</h2>
         <form action="#" method="get">
+            <p>
             <label>Name:</label>
             <input type="text" name="name" id="name">
+            </p>
             <br />
+            <p>
             <label>Your thoughts: </label>
-            <input type="text" name="thought" id="thought">
+            <input type="text" name="thought" id = "thought">
+            </p>
+            <br />
+            <p>
+            <input type="submit" value = "Submit">
+            </p>
         </form>
     </div>
     <div id="footer">
