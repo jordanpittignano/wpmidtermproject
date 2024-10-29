@@ -6,37 +6,45 @@
     <link rel="stylesheet" href="f&b.css">
 
     <style type="text/css">
-        #slogan {text-align: center; font-size: 60px; margin-top: 30px; margin-bottom: 100px;}
         #homeimg img {height: 300px; display: inline-block;}
         #homeimg {margin: 0 auto; margin-bottom: 100px}
         #homeimg #midimg {margin-left: 40px; margin-right: 40px;}
-        #mission {margin: 0 auto; width: 700px;}
+        #mission {margin: 0 auto; width: 550px; text-align: center; font-size: 30px; 
+                  color: #1F0B55; font-family: 'Playfair Display', serif; line-height:1.5}
+        #buttonContainer {display: flex; justify-content: center; align-items: center;
+                         padding-top: 20px}
+        #button {background-color:#B6A5D6; color: #FFFFFF; border: 2px solid #684FAA;
+                padding: 10px 10px; font-size: 20px; font-weight: 600; display: inline-block;
+                margin: 0 auto;}
+        #button:hover {background-color: #684FAA; color: #FFFFFF}
     
     </style>
 </head>
 
 <body>
     <div id="header">
-        <a href="index.html">
-            <img src="logo.png" align="left">
-        </a>
-        Fluff & Buff
-        <div id="topnav">
+        <div id="header-content">
+            <a href="index.html">
+                <img id="header img" src="logo.jpg">
+            </a>
+            Fluff & Buff
+        </div>
+        <div id="nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="services.html">Services & Pricing</a></li>
-                <li><a href="apt.html">Book an Apt</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">Reviews</a></li>
+                <li><a href="apt.html">Book an Appointment</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
                 <li><a href="#">Tips & Blogs</a></li>
-                <li><a href="#">Staff</a></li>
+                <li><a href="contactUs.html">Staff</a></li>
             </ul>
         </div>
     </div>
 
-    <div id="slogan">
+    <h1>
         Where Every Pup Leaves Pampered!
-    </div>
+    </h1>
 
     <div id="homeimg" align="center">
         <img src="hp1.jpg">
@@ -45,16 +53,20 @@
     </div>
 
     <div id="mission">
-        “At Fluff & Buff, we provide exceptional grooming services in Medford that prioritize the comfort and well-being of every dog. We create a welcoming environment where pets feel safe and loved, using high-quality products and personalized care. Our goal is to enhance the beauty and health of your furry companions, ensuring every visit is a joyful experience that leaves tails wagging!”
+        “At Fluff & Buff, we provide exceptional grooming services
+        that prioritize the comfort and well-being of every dog. We create a welcoming environment where pets feel loved, ensuring every visit is a joyful experience that leaves tails wagging!”
+    </div>
+
+    <div id="buttonContainer">
+        <a style="text-decoration:none" id="button" href="apt.html">BOOK NOW!</a>
     </div>
 
     <div id="footer">
         <div id="botnav">
             <ul>
-
                 <li><a href="services.html">Services & Pricing</a></li>
-                <li><a href="apt.html">Book an Apt</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="apt.html">Book an Appointment</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
             </ul>
         </div>
     </div>
