@@ -6,12 +6,41 @@
     <link rel="stylesheet" href="f&b.css">
 
     <style type="text/css">
-        #blurb h1 {text-align: center; font-size: 30px;}
-        #blurb h2 {text-align: center; font-size: 20px; margin-bottom: 80px;}
-        #image {height:300px;}
-        #block {display: block; height: 340px; margin-left: 40px; margin-right: 40px;}
+        #image {width:300px; padding:20px}
+        #block {display: block; height: 340px; margin-left: 15%; margin-right: 15%; color: #1F0B55; line-height: 1.5}
         #captionl { text-align: left; margin-left: 50px;}
         #captionr {text-align: right; margin-right: 50px;}
+        #descriptionl {text-align: left; max-width: 80%; margin-top: 100px; font-size:18px}
+        #descriptionr {text-align: right; margin-top: 100px; margin-left:20%; font-size:18px}
+        p {
+            text-align: center; 
+            margin-right: 20%; 
+            margin-left: 20%; 
+            font-size:20px; 
+            color: #1F0B55; 
+            line-height: 1.5; 
+            padding-bottom: 40px
+        }
+        #buttonContainer {
+            display: flex; 
+            justify-content: center; 
+            align-items: center;
+            margin-bottom: 50px
+        }
+        #button {
+            background-color:#B6A5D6; 
+            color: #FFFFFF; 
+            border: 2px solid #684FAA;
+            padding: 10px 10px; 
+            font-size: 20px; 
+            font-weight: 600; 
+            display: inline-block;
+            margin: 0 auto;
+        }
+        #button:hover {
+            background-color: #684FAA; 
+            color: #FFFFFF
+        }
         
     </style>
 </head>
@@ -37,37 +66,68 @@
         </div>
     </div>
     
-    <div id="blurb">
-        <h1>
-            Here at Fluff & Buff, we offer In Store and at Home Services
-        </h1>
-        <h2>
-            Book an Appointment Today through our appointments window
-        </h2>
+    <h1>
+        A Look Into Our Services
+    </h1>
+
+    <p>At Fluff & Buff, we provide a range of grooming services tailored to meet your dog’s
+         unique needs. Each session prioritizes your pet's comfort, using high-quality products 
+         and techniques for a positive grooming experience.</p>
+
+    <div id="buttonContainer">
+        <a style="text-decoration:none" id="button" href="apt.html">BOOK NOW!</a>
     </div>
 
     <div id="block">
-        <div id="captionl">Bathing</div>
-        <img id="image" src="hp1.jpg" align="left">
+        <div id="captionl"><h2>Bathing - $30</h2></div>
+        <img id="image" src="bathing.jpg" align="left">
+        <div id="descriptionl">Treat your pup to a refreshing bath at Fluff & Buff! 
+            Our gentle, high-quality shampoos are tailored to your dog’s coat type and 
+            skin sensitivity, ensuring a clean and comfortable experience. After the bath, 
+            we provide a soothing towel dry and a light brushing to leave your furry friend 
+            soft, shiny, and smelling delightful.
+        </div>
     </div>
 
-    <div id="block">
-        <div id="captionr">Dental Care</div>
-        <img id="image" src="hp2.jpg" align="right">
-    </div>
+    <br>
 
     <div id="block">
-        <div id="captionl">Hair Cuts</div>
-        <img id="image" src="hp3.jpg" align="left">
-    </div>
-
-    <div id="block">
-        <div id="captionr">Flea Care</div>
-        <img id="image" src="hp1.jpg" align="right">
+        <div id="captionr"><h2>Dental Care - $20</h2></div>
+        <img id="image" src="dentalcare.jpg" align="right">
+        <div id="descriptionr">Keep your dog’s smile bright and healthy with our dental
+             care services! We offer teeth brushing and oral health treatments designed 
+             to prevent plaque buildup and ensure fresh breath for your furry friend. 
+             Regular dental care not only promotes oral hygiene but also contributes to 
+             your dog’s overall health and well-being.</div>
     </div>
     
+    <br>
 
+    <div id="block">
+        <div id="captionl"><h2>Hair Cuts - Starting at $45</h2></div>
+        <img id="image" src="haircut.jpg" align="left">
+        <div id="descriptionl">Our expert groomers specialize in stylish haircuts that
+             suit your dog’s breed and personality. Whether your pup needs a simple trim,
+              a full grooming session, or a breed-specific cut, we ensure your furry friend
+               leaves looking their absolute best. We take the time to discuss your 
+               preferences and any specific styling requests to achieve the perfect look.</div>
+    </div>
     
+    <br>
+
+    <div id="block">
+        <div id="captionr"><h2>Flea Care - $25</h2></div>
+        <img id="image" src="fleacare.jpg" align="right">
+        <div id="descriptionr">Say goodbye to pesky fleas with our comprehensive flea
+             care services! We provide effective treatments and preventative options,
+              including topical applications and flea baths, to keep your dog comfortable
+               and free from pests all year round. Our team is also happy to offer tips
+                on maintaining a flea-free environment at home to ensure your furry 
+                friend stays happy and healthy.</div>
+    </div>
+        
+    <br>
+
 
     <div id="footer">
         <div id="botnav">
@@ -85,3 +145,4 @@
 
 
 </html>
+
