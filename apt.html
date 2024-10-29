@@ -18,6 +18,53 @@
         .errorMessage {color: #ff0000; background-color: #fffdc3;} 
         label {margin-right: 10px;}
 
+        @media(max-width: 922px) {
+            #nav li a {font-size: 18px; padding: 5px}
+        }
+
+        @media(max-width: 787px) {
+            #nav li a {font-size: 15px; padding: 2px}
+            #header {padding-bottom: 0px}
+        }
+
+        @media(max-width: 650px) {
+            #nav li a {font-size: 15px; padding: 0px; padding-left: 2px;}
+        }
+
+        @media(max-width: 633px) {
+            #nav li a {font-size: 14px;}
+        }
+
+        @media(max-width: 600px) {
+            #nav li a {font-size: 13px; }
+        }
+
+        @media(max-width: 568px) {
+            #nav li a {font-size: 12px; }
+        }
+
+        @media(max-width: 556px) {
+            #botnav li a {padding: 5px}
+        }
+
+        @media(max-width: 535px) {
+            #nav li a {font-size: 11px; }
+        }
+
+        @media(max-width: 521px) {
+            #botnav li a {font-size: 18px;}
+        }
+
+        @media(max-width: 501px) {
+            #main-text {margin-left: 50px; text-align: start;}
+            #nav li a {font-size: 10px;}
+            #form {width: 480px;}
+            #type {margin-left: 50px;}
+            #loc {margin-left: 50px;}
+            #time {margin-left: 50px;}
+            #info {margin-left: 50px;}
+            #submit {margin-left: 50px;}
+        }
         
     </style>
 
@@ -47,13 +94,10 @@
                 $("#label").addClass("errorMessage")
                 valid = false
             }
-            return valid
-            
+            return valid  
         }
     </script>
 
-
-    </script>
 </head>
 
 <body>
@@ -67,11 +111,11 @@
         <div id="nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="services.html">Services & Pricing</a></li>
+                <li id="navserv"><a href="services.html">Services & Pricing</a></li>
                 <li><a href="apt.html">Book an Appointment</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="reviews.html">Reviews</a></li>
-                <li><a href="#">Tips & Blogs</a></li>
+                <li><a href="blog.html">Tips & Blogs</a></li>
                 <li><a href="contactUs.html">Staff</a></li>
             </ul>
         </div>
