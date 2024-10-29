@@ -4,15 +4,14 @@
 <head>
     <link rel="stylesheet" href="f&b.css">
     <style>
-        .box{margin:0 auto;text-align: center;}
-        ul#review{width:600px; margin: 0 auto; display: inline-block;text-align: left;}
-        li#review{font-size: 18px;margin:25px;}
-        h1{text-align: center;font-size: 80px;}
-        h2{text-align: center;font-size: 60px;}
-        form {display:table; margin: 0 auto;}
+        .box{margin:0 auto;text-align: center; color:#1F0B55;}
+        ul#review{width:650px; margin: 0 auto; display: block;text-align: left;list-style-type: none;text-align:center}
+        li#review{font-size: 18px;margin:25px; border:1px solid; padding:15px; line-height: 1.5; }
+        h2{text-align: center;font-size: 25px;color:#1F0B55; font-weight:100; margin-left: 20%; margin-right: 20%; margin-bottom: 50px}
+        form {display:table; margin: 0 auto; text-align: center;}
         p{display:table-row;}
         label{display:table-cell;}
-        input{display: table-cell;}
+        input{display: table-cell; margin-left:20px; margin-bottom: 10px}
     </style>
 
 </head>
@@ -37,28 +36,30 @@
             </ul>
         </div>
     </div>
-    <h1>Reviews</h1>
+    <h1>Reviews & Testimonials</h1>
+    <h2>See what our happy clients have to say about their Fluff & Buff experience 
+        and why their pups can’t wait to come back!</h2>
     <div class="box">
         <ul id = "review">
-            <li id = "review">I loved the way my pup looked after going to Fluff and Buff! My dog has never been so soft and happy!<br>- Estelle Darcy</li>
-            <li id = "review">Fluff and Buff is extremely well run and efficient with their work. My dog was done after 1 hour and looked amazing!<br>- Joeseph O'Connell</li>
-            <li id = "review">The staff at Fluff and Buff is so kind! They really go the extra mile to make my pup feel comfortable!<br>- Sarah Johnson</li>
-            <li id = "review">Fluff and Buff's offering of organic shampoos was very thoughtful and extensive! Couldn't have picked a better place!<br>- Thomas Goldberg</li>
+            <li id = "review">I loved the way my pup looked after going to Fluff and Buff! My dog has never been so soft and happy!<br><b>- Estelle Darcy and Pip the Poodle</b></li>
+            <li id = "review">Fluff and Buff is extremely well run and efficient with their work. My dog was done after 1 hour and looked amazing!<br><b>- Joseph O'Connell and Scout the Terrier</b></li>
+            <li id = "review">The staff at Fluff and Buff is so kind! They really go the extra mile to make my pup feel comfortable!<br><b>- Sarah Johnson and Rocky the Husky</b></li>
+            <li id = "review">Fluff and Buff's offering of organic shampoos was very thoughtful and extensive! Couldn't have picked a better place!<br><b>- Thomas Goldberg and Chip the Black Lab</b></li>
         </ul>
-        <h2>Give us your thoughts!</h2>
+        
+        <h2 style="padding-top:30px">Share your Thoughts!</h2>
         <form action="#" method="get">
             <p>
-            <label>Name:</label>
-            <input type="text" name="name" id="name">
+                <label>Name: </label>
+                <input type="text" name="name" id="name">
             </p>
-            <br />
             <p>
-            <label>Your thoughts: </label>
-            <input type="text" name="thought" id = "thought">
+                <label>Message: </label>
+                <input type="text" name="message" id = "message">
             </p>
-            <br />
+            <br>
             <p>
-            <input type="submit" value = "Submit">
+                <input type="submit" value = "Submit">
             </p>
         </form>
     </div>
