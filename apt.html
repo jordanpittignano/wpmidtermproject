@@ -7,15 +7,58 @@
     <link rel="stylesheet" href="f&b.css">
 
     <style type="text/css">
-        #form {margin: 0 auto; border: 2px solid; border-color: #1F0B55; width: 500px; margin-top: 40px; padding-bottom: 10px; color: #1F0B55}
-        #main-text {text-align: center; font-size: 30px; margin-top: 10px;}
-        #type {margin-top: 15px; margin-left: 70px;}
-        #label {text-decoration: underline; font-weight: bold; margin-bottom: 4px; width: 220px;}
-        #loc {margin-top: 15px; margin-left: 70px;}
-        #time {margin-top: 15px; margin-left: 70px;}
-        #info {margin-top: 15px; margin-left: 70px;}
-        #info input {margin-bottom: 4px;}
-        #submit {margin-left: 70px; margin-top: 20px}
+        #form {
+            margin: 0 auto; 
+            border: 2px solid; 
+            border-color: #1F0B55; 
+            width: 500px; 
+            margin-top: 40px; 
+            padding-bottom: 10px; 
+            color: #1F0B55
+        }
+
+        #main-text {
+            text-align: center; 
+            font-size: 30px; 
+            margin-top: 10px;
+        }
+
+        #type {
+            margin-top: 15px; 
+            margin-left: 70px;
+        }
+
+        #label {
+            text-decoration: underline; 
+            font-weight: bold; 
+            margin-bottom: 4px; 
+            width: 220px;
+        }
+
+        #loc {
+            margin-top: 15px; 
+            margin-left: 70px;
+        }
+        
+        #time {
+            margin-top: 15px; 
+            margin-left: 70px;
+        }
+
+        #info {
+            margin-top: 15px; 
+            margin-left: 70px;
+        }
+
+        #info input {
+            margin-bottom: 4px;
+        }
+
+        #submit {
+            margin-left: 70px;
+            margin-top: 20px
+        }
+
         .errorMessage {color: #ff0000; background-color: #fffdc3;} 
         label {margin-right: 10px;}
 
@@ -109,7 +152,7 @@
                 <li><a href="apt.html">Book an Appointment</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="reviews.html">Reviews</a></li>
-                <li><a href="blog.html">Tips & Blogs</a></li>
+                <li><a href="blogs.html">Tips & Blogs</a></li>
                 <li><a href="contactUs.html">Staff</a></li>
             </ul>
         </div>
@@ -128,6 +171,7 @@
     <form method="get" action="#" onsubmit="return validateForm()">
         <div id="form">
             <div id="main-text">Book an Appointment Today!</div>
+
             <div id="type">
                 <div id="label">Select a Type of Appointment*</div>
                 <input type="checkbox" id="B" name="apttype" value="Bathing">Bathing
@@ -138,6 +182,7 @@
                 </br>
                 <input type="checkbox" id="FC" name="apttype" value="Flea Care">Flea Care
             </div>
+
             <div id="loc">
                 <div id="label">Select Location*</div>
                 <select size="1" id="location">
@@ -146,10 +191,12 @@
                 <option value="At-Home">At-Home</option>
                 </select>            
             </div>
+
             <div id="time">
                 <div id="label">Appointment Date</div>
                 <label id="date1">Date*</label><input type="text" id="date" name="date">
             </div>
+
             <div id="info">
                 <div id="label">Information</div>
                 <label id="name1">Name*</label><input type="text" id="name" name="name">
@@ -160,12 +207,13 @@
                 </br>
                 <label id="number1">Phone Number*</label><input type="text" id="number" name="number">
             </div>
+
             <div id="submit">
                 <input type="submit">
             </div>
+
         </div>
     </form>
-
 
     <div id="footer">
         <div id="botnav">
