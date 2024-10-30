@@ -2,7 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="f&b.css">
-        
+        <link rel="icon" type="image/x-icon" href="tabicon.jpg">
         <style type="text/css">
 
             li {display: inline-block;}
@@ -14,11 +14,12 @@
             #contactBox {border: 2px solid; border-color: #1F0B55; margin-top: 50px; margin-left:20%; margin-right:20%}
             .errorMessage {background-color: #fffdc3;} 
             #descriptionBox {text-align:left; color:#1F0B55; margin-left:20%; margin-right:18%; line-height: 1.5; }
-            .name {font-weight:600; font-size: 22px; margin-top: 30px}
+            .name {font-weight:600; font-size: 22px; margin-top: 30px;}
             .job {font-size: 20px; font-weight:600; margin-top: 10px; margin-bottom: 5px}
             .description {font-size: 18px; padding-bottom: 60px}
             img {width: 200px; height: auto; margin-top:20px; margin-right: 40px; border: 2px solid; border-color: #1F0B55;}
-            #header img {border:none}
+            #header img {border:none; margin-top: 0}
+            .profile {display:flex; align-items:flex-start; flex-direction: column}
         </style>
 
         <title>Staff: Fluff & Buff</title>
@@ -73,8 +74,8 @@
         </p>
 
         <div id="descriptionBox">
-            <div>
-                <img src="sam.jpg" align="left">
+            <img src="sam.jpg" align="left">
+            <div class="profile">
                 <div class="name">Sam L.</div>
                 <div class="job">Groomer</div>
                 <div class="description">With over 8 years of grooming experience, Sam brings expert 
@@ -83,8 +84,8 @@
                     Sam once trained as a pet photographer, so he knows just how to make every dog look camera-ready!</div>
             </div>
 
-            <div>
-                <img src="cassandra.jpg" align="left">
+            <img src="cassandra.jpg" align="left">
+            <div class="profile">
                 <div class="name">Cassandra M.</div>
                 <div class="job">Groomer</div>
                 <div class="description">Cassandra has a decade of experience in grooming and is known for her 
@@ -93,8 +94,8 @@
                     Cassandra enjoys volunteering at local animal shelters and spending time with her two rescue dogs.</div>
             </div>
 
-            <div>
-                <img src="mark.jpg" align="left">
+            <img src="mark.jpg" align="left">
+            <div class="profile">
                 <div class="name">Mark J.</div>
                 <div class="job">Groomer</div>
                 <div class="description">Mark brings 5 years of grooming experience to Fluff & Buff, where his attention
@@ -104,8 +105,8 @@
                       on the weekends!</div>
             </div>
 
-            <div>
-                <img src="rachel.jpg" align="left">
+            <img src="rachel.jpg" align="left">
+            <div class="profile">
                 <div class="name">Rachel G.</div>
                 <div class="job">Manager</div>
                 <div class="description">Rachel, the manager at Fluff & Buff, has over 6 years of experience in pet care 
