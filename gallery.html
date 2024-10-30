@@ -60,9 +60,16 @@
         <meta charset="utf-8">
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
             <style type="text/css">
-            #slides-wrapper{height:320px; display:flex; justify-content: center; align-items: center;}
+            #slides-wrapper{
+                height:320px; 
+                display:flex; 
+                justify-content: center; 
+                align-items: center;
+            }
             </style>
+
             <script language="javascript">
             pets = ["bed.jpg", "bath.jpg","brush.jpg","pamper.jpg","tennis.jpg","toothbrush.jpg","towel.jpg","tub.jpg","water.jpg"];
             var petIndex=0;
@@ -70,10 +77,12 @@
             $(document).ready(function() {
                 $("#slide img").fadeOut(3000,nextSlide);
             })
+
             function slideShow()
             {
                 $("#slide img").fadeOut(2000,nextSlide);
             }
+
             function nextSlide()
             {
                 petIndex++;
@@ -99,12 +108,12 @@
                     <li><a href="apt.html">Book an Appointment</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="reviews.html">Reviews</a></li>
-                    <li><a href="#">Tips & Blogs</a></li>
+                    <li><a href="blogs.html">Tips & Blogs</a></li>
                     <li><a href="contactUs.html">Staff</a></li>
                 </ul>
             </div>
         </div>
-        <h1>Check Out Some of Our Happy Pups!</h1>
+        <h1 style="margin-bottom: 40px">Check Out Some of Our Happy Pups!</h1>
         <div id='slides-wrapper'>
             <div id='slide' style="border:2px solid; border-color:#1F0B55">
                 <img src="bed.jpg" />
@@ -151,7 +160,6 @@
             </li>
         </ul>
         </div>
-
 
         <div id="footer">
             <div id="botnav">
