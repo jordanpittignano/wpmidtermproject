@@ -26,7 +26,7 @@
                 width: 250px;
                 height: 250px;
                 margin: 0 0 20px 20px;
-                border: 1px solid #333333;
+                border: 1px solid #1F0B55;
                 text-align: center;
                 display: inline-block;
                 position: relative;
@@ -37,35 +37,37 @@
                 left: 0;
                 right: 0;
                 bottom: -50px;
-                background: #000000;
+                background: #B6A5D6;
                 color: #ffffff;
                 height: 50px;
-                font-size: 25px;
-                line-height: 20px;
+                font-size: 18px;
+                line-height: 1.2;
                 text-align: center;
-                opacity: 0.7;
                 display: inline-block;
             }
             .box li:hover .description {
                 bottom: 0;
             }
-            h1{
-                text-align: center;
-                font-size: 120px;
+            body {
+                background-image:url("background.jpg"); 
+                background-size:cover;
+                background-blend-mode: lighten;
+                margin: 0;
             }
         
         </style>
         <meta charset="utf-8">
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
             <style type="text/css">
-            #slides-wrapper{height:320px;}
+            #slides-wrapper{height:320px; display:flex; justify-content: center; align-items: center;}
             </style>
             <script language="javascript">
             pets = ["bed.jpg", "bath.jpg","brush.jpg","pamper.jpg","tennis.jpg","toothbrush.jpg","towel.jpg","tub.jpg","water.jpg"];
             var petIndex=0;
         
             $(document).ready(function() {
-                $("#slide img").fadeOut(2000,nextSlide);
+                $("#slide img").fadeOut(3000,nextSlide);
             })
             function slideShow()
             {
@@ -101,9 +103,9 @@
                 </ul>
             </div>
         </div>
-        <h1>Happy Pup Photos</h1>
+        <h1>Check Out Some of Our Happy Pups!</h1>
         <div id='slides-wrapper'>
-            <div id='slide'>
+            <div id='slide' style="border:2px solid; border-color:#1F0B55">
                 <img src="bed.jpg" />
             </div>
         </div>
