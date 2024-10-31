@@ -6,57 +6,55 @@
     <link rel="icon" type="image/x-icon" href="tabicon.jpg">
     <title>Reviews: Fluff & Buff</title>
     <style>
-        .box{
-            margin: 0 auto;
-            text-align: center; 
-            color:#1F0B55;
+        .box{margin:0 auto;text-align: center; color:#1F0B55;}
+        ul#review{width:650px; margin: 0 auto; display: block;text-align: left;list-style-type: none;text-align:center}
+        li#review{font-size: 18px;margin:25px; border:1px solid; padding:15px; line-height: 1.5; }
+        h2{text-align: center;font-size: 25px;color:#1F0B55; font-weight:100; margin-left: 20%; margin-right: 20%; margin-bottom: 50px}
+        form {display:table; margin: 0 auto; text-align: center;}
+        p{display:table-row;}
+        label{display:table-cell;}
+        input{display: table-cell; margin-left:20px; margin-bottom: 10px}
+        @media(max-width:674px){
+            #review li{width:500px;}
+        }
+        @media(max-width:603px){
+            #review li{width:420px;}
+        }
+        @media(max-width:514px){
+            #review li{width:350px;}
+        }
+        @media(max-width: 922px) {
+            #nav li a {font-size: 18px; padding: 5px}
         }
 
-        ul#review{
-            width:650px; 
-            margin: 0 auto; 
-            display: block;
-            text-align: left;
-            list-style-type: none;
-            text-align:center
+        @media(max-width: 787px) {
+            #nav li a {font-size: 17px; padding: 2px}
+            #header {padding-bottom: 0px}
         }
 
-        li#review{
-            font-size: 18px;
-            margin:25px; 
-            border:1px solid; 
-            padding:15px; 
-            line-height: 1.5; 
+        @media(max-width:715px) {
+            #nav {display: none;}
+            #smallnav {display: flex;}
         }
 
-        h2{
-            text-align: center;
-            font-size: 25px;
-            color:#1F0B55; 
-            font-weight:100; 
-            margin-left: 20%; 
-            margin-right: 20%; 
-            margin-bottom: 50px
+        @media(max-width: 568px) {
+            #smallnav li a {font-size: 20px; }
         }
 
-        form {
-            display:table; 
-            margin: 0 auto; 
-            text-align: center;
+        @media(max-width: 556px) {
+            #botnav li a {padding: 5px}
         }
 
-        p{
-            display:table-row;
+        @media(max-width: 535px) {
+            #smallnav li a {font-size: 18px; }
         }
 
-        label{
-            display:table-cell;
+        @media(max-width: 521px) {
+            #botnav li a {font-size: 18px;}
         }
 
-        input{
-            display: table-cell; 
-            margin-left:20px; 
-            margin-bottom: 10px
+        @media(max-width: 501px) {
+            #nav li a {font-size: 10px;}
         }
     </style>
 
@@ -77,12 +75,22 @@
                 <li><a href="apt.html">Book an Appointment</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="reviews.html">Reviews</a></li>
-                <li><a href="blogs.html">Tips & Blogs</a></li>
+                <li><a href="#">Tips & Blogs</a></li>
+                <li><a href="contactUs.html">Staff</a></li>
+            </ul>
+        </div>
+        <div id="smallnav">
+            <ul>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="apt.html">Appointments</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="blog.html">Blogs</a></li>
                 <li><a href="contactUs.html">Staff</a></li>
             </ul>
         </div>
     </div>
-    <h1 style="margin-bottom: 70px">Reviews & Testimonials</h1>
+    <h1>Reviews & Testimonials</h1>
     <h2>See what our happy clients have to say about their Fluff & Buff experience 
         and why their pups can’t wait to come back!</h2>
     <div class="box">
@@ -121,5 +129,7 @@
     </div>
 
 </body>
+
+
 
 </html>
