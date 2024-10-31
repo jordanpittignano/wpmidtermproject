@@ -2,7 +2,6 @@
 <html>
     <head>
         <link rel="stylesheet" href="f&b.css">
-        <link rel="icon" type="image/x-icon" href="tabicon.jpg">
         <title>Gallery: Fluff & Buff</title>
         <style>
             .grid{
@@ -27,7 +26,7 @@
                 width: 250px;
                 height: 250px;
                 margin: 0 0 20px 20px;
-                border: 1px solid #1F0B55;
+                border: 1px solid #333333;
                 text-align: center;
                 display: inline-block;
                 position: relative;
@@ -38,51 +37,80 @@
                 left: 0;
                 right: 0;
                 bottom: -50px;
-                background: #B6A5D6;
+                background: #000000;
                 color: #ffffff;
                 height: 50px;
-                font-size: 18px;
-                line-height: 1.2;
+                font-size: 25px;
+                line-height: 20px;
                 text-align: center;
+                opacity: 0.7;
                 display: inline-block;
             }
             .box li:hover .description {
                 bottom: 0;
             }
-            body {
-                background-image:url("background.jpg"); 
-                background-size:cover;
-                background-blend-mode: lighten;
-                margin: 0;
+            h1{
+                text-align: center;
+                font-size: 120px;
             }
+            @media(max-width: 922px) {
+                #nav li a {font-size: 18px; padding: 5px}
+            }
+            
+            @media(max-width: 851px) {
+                .box{width: 600px;}
+            }
+            @media(max-width: 787px) {
+                #nav li a {font-size: 17px; padding: 2px}
+                #header {padding-bottom: 0px}
+            }
+
+            @media(max-width:715px) {
+                #nav {display: none;}
+                #smallnav {display: flex;}
+            }
+
+            @media(max-width:583px){
+                .box{width: 300px;}
+            }
+            @media(max-width: 568px) {
+                #smallnav li a {font-size: 20px; }
+            }
+
+            @media(max-width: 556px) {
+                #botnav li a {padding: 5px}
+            }
+
+            @media(max-width: 535px) {
+                #smallnav li a {font-size: 18px; }
+            }
+
+            @media(max-width: 521px) {
+                #botnav li a {font-size: 18px;}
+            }
+
+            @media(max-width: 501px) {
+            #nav li a {font-size: 10px;}
+        }
+
         
         </style>
         <meta charset="utf-8">
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
-        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
             <style type="text/css">
-            #slides-wrapper{
-                height:320px; 
-                display:flex; 
-                justify-content: center; 
-                align-items: center;
-            }
+            #slides-wrapper{height:320px;margin:0 auto; text-align: center;}
             </style>
-
             <script language="javascript">
             pets = ["bed.jpg", "bath.jpg","brush.jpg","pamper.jpg","tennis.jpg","toothbrush.jpg","towel.jpg","tub.jpg","water.jpg"];
             var petIndex=0;
         
             $(document).ready(function() {
-                $("#slide img").fadeOut(3000,nextSlide);
+                $("#slide img").fadeOut(2000,nextSlide);
             })
-
             function slideShow()
             {
                 $("#slide img").fadeOut(2000,nextSlide);
             }
-
             function nextSlide()
             {
                 petIndex++;
@@ -108,14 +136,24 @@
                     <li><a href="apt.html">Book an Appointment</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="reviews.html">Reviews</a></li>
-                    <li><a href="blogs.html">Tips & Blogs</a></li>
+                    <li><a href="#">Tips & Blogs</a></li>
+                    <li><a href="contactUs.html">Staff</a></li>
+                </ul>
+            </div>
+            <div id="smallnav">
+                <ul>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="apt.html">Appointments</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="blog.html">Blogs</a></li>
                     <li><a href="contactUs.html">Staff</a></li>
                 </ul>
             </div>
         </div>
-        <h1 style="margin-bottom: 40px">Check Out Some of Our Happy Pups!</h1>
+        <h1>Happy Pup Photos</h1>
         <div id='slides-wrapper'>
-            <div id='slide' style="border:2px solid; border-color:#1F0B55">
+            <div id='slide'>
                 <img src="bed.jpg" />
             </div>
         </div>
@@ -160,6 +198,7 @@
             </li>
         </ul>
         </div>
+
 
         <div id="footer">
             <div id="botnav">
