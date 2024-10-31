@@ -33,7 +33,7 @@
 
         #descriptionl {
             text-align: left; 
-            max-width: 80%; 
+            margin-right: 20%;
             margin-top: 100px; 
             font-size:18px
         }
@@ -77,6 +77,77 @@
             background-color: #684FAA; 
             color: #FFFFFF
         }
+
+        @media(max-width: 1190px) {
+            #descriptionl {font-size: 16px; margin-top: 80px;}
+            #descriptionr {font-size: 16px; margin-top: 80px;}
+        }
+
+        @media(max-width: 1070px) {
+            #descriptionl {margin-top: 60px;}
+            #descriptionr {margin-top: 60px;}
+        }
+
+        @media(max-width: 1025px) {
+            #descriptionl {font-size: 15px;}
+            #descriptionr {font-size: 15px;}
+            #image {width:250px;}
+        }
+
+        @media(max-width: 950px) {
+            #descriptionl {font-size: 14px;}
+            #descriptionr {font-size: 14px;}
+        }
+        
+        @media(max-width: 922px) {
+            #nav li a {font-size: 18px; padding: 5px}
+            #block {max-width: 80%; margin-left: 10%; margin-right: 10%;}
+        }
+
+        @media(max-width: 787px) {
+            #nav li a {font-size: 17px; padding: 2px}
+            #header {padding-bottom: 0px}
+            #descriptionl {margin-top: 30px;}
+            #descriptionr {margin-top: 30px;}
+        }
+
+        @media(max-width: 740px) {
+            #block {max-width: 90%; margin-left: 10%; margin-right: 10%;}
+            #descriptionl {font-size: 13px; margin-right: 5%}
+            #descriptionr {font-size: 13px; margin-left: 5%;}
+        }
+
+        @media(max-width:715px) {
+            #nav {display: none;}
+            #smallnav {display: flex;}
+        }
+
+        @media(max-width: 635px) {
+            #botnav li a {font-size: 18px;}
+        }
+
+        @media(max-width: 600px) {
+            #botnav li {padding: 0px;}
+        }
+
+        @media(max-width: 590px) {
+            #image {width: 200px}
+            #descriptionl {font-size: 10px;}
+            #descriptionr {font-size: 10px;}
+        }
+
+        @media(max-width: 568px) {
+            #smallnav li a {font-size: 20px; }
+        }
+
+        @media(max-width: 556px) {
+            #botnav li a {padding: 5px}
+        }
+
+        @media(max-width: 535px) {
+            #smallnav li a {font-size: 18px; }
+        }
+
         
     </style>
 </head>
@@ -97,6 +168,16 @@
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="reviews.html">Reviews</a></li>
                 <li><a href="blogs.html">Tips & Blogs</a></li>
+                <li><a href="contactUs.html">Staff</a></li>
+            </ul>
+        </div>
+        <div id="smallnav">
+            <ul>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="apt.html">Appointments</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="blog.html">Blogs</a></li>
                 <li><a href="contactUs.html">Staff</a></li>
             </ul>
         </div>
