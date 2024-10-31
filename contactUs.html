@@ -97,6 +97,52 @@
                 flex-direction: column
             }
 
+            .short {
+                display: none;
+                font-size: 18px; 
+                padding-bottom: 60px
+            }
+
+
+
+        @media(max-width: 922px) {
+            #nav li a {font-size: 18px; padding: 5px}
+        }
+
+        @media(max-width: 787px) {
+            #nav li a {font-size: 17px; padding: 2px}
+            #header {padding-bottom: 0px}
+        }
+
+        @media(max-width:715px) {
+            #nav {display: none;}
+            #smallnav {display: flex;}
+            .description {display: none;}
+            .short {display: flex;}
+            #contactBox {margin-left: 10%; margin-right: 10%;}
+        }
+
+        @media(max-width: 635px) {
+            #botnav li a {font-size: 18px;}
+        }
+
+        @media(max-width: 600px) {
+            #botnav li {padding: 0px;}
+            #descriptionBox {margin-left: 10%; margin-right: 9%;}
+        }
+
+        @media(max-width: 568px) {
+            #smallnav li a {font-size: 20px; }
+        }
+
+        @media(max-width: 556px) {
+            #botnav li a {padding: 5px}
+        }
+
+        @media(max-width: 535px) {
+            #smallnav li a {font-size: 18px; }
+        }
+
         </style>
 
         <title>Staff: Fluff & Buff</title>
@@ -142,6 +188,16 @@
                     <li><a href="contactUs.html">Staff</a></li>
                 </ul>
             </div>
+            <div id="smallnav">
+                <ul>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="apt.html">Appointments</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="blog.html">Blogs</a></li>
+                    <li><a href="contactUs.html">Staff</a></li>
+                </ul>
+            </div>
         </div>
 
         <h1 style="margin-bottom: 65px">Meet Our Staff!</h1>
@@ -159,7 +215,10 @@
                     skill and a gentle touch to every dog he works with at Fluff & Buff. He specializes in 
                     calming anxious pets and creating custom styles to suit each pup’s personality. Fun fact: 
                     Sam once trained as a pet photographer, so he knows just how to make every dog look camera-ready!</div>
-            </div>
+                </div>
+                <div class="short">With over 8 years of experience, Sam brings expert 
+                    skill and a gentle touch to every dog he works with at Fluff & Buff. 
+                </div>
 
             <img src="cassandra.jpg" align="left">
             <div class="profile">
@@ -169,7 +228,10 @@
                     attention to detail and love of creative cuts. She has a special knack for working with 
                     puppies and making their first grooming experiences positive and fun. When she's not grooming, 
                     Cassandra enjoys volunteering at local animal shelters and spending time with her two rescue dogs.</div>
-            </div>
+                </div>
+                <div class="short">Cassandra has a decade of experience in grooming and is known for her 
+                    attention to detail and love of creative cuts.
+                </div>
 
             <img src="mark.jpg" align="left">
             <div class="profile">
@@ -180,7 +242,11 @@
                       he excels at building trust with even the most nervous pups, making the grooming experience enjoyable 
                       for them. Fun fact: Mark is also an avid dog agility enthusiast and enjoys competing with his own dog 
                       on the weekends!</div>
-            </div>
+                </div>
+                <div class="short">
+                    Mark brings 5 years of grooming experience to Fluff & Buff, where his attention
+                     to detail ensures that every dog leaves looking their absolute best.
+                </div>
 
             <img src="rachel.jpg" align="left">
             <div class="profile">
@@ -191,6 +257,10 @@
                     passion for customer service, Rachel is dedicated to providing the best experience for clients, always ready 
                     to address any questions or concerns. Fun fact: When not managing the shop, Rachel enjoys hiking with her 
                     puppy, exploring new trails and dog-friendly parks!</div>
+            </div>
+            <div class="short">
+                Rachel, the manager at Fluff & Buff, has over 6 years of experience in pet care 
+                management, ensuring smooth operations and a welcoming atmosphere for all.
             </div>
         </div>
         <br>
